@@ -1,6 +1,6 @@
 # Focus Timer
 
-A focus timer with desktop notifications.
+A focus timer with desktop notifications.  
 Built with Python and Tkinter.
 
 ## Features 
@@ -9,7 +9,7 @@ Built with Python and Tkinter.
 - Clean GUI
 
 ## Run
-**Windows (recommended):**
+**Windows (recommended):**  
 Double-click `start_timer.vbs` to launch without console window.
 
 **Or run directly:**
