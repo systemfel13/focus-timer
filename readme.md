@@ -1,6 +1,6 @@
 # Focus Timer
 
-A focus timer with desktop notifications.
+A focus timer with desktop notifications.  
 Built with Python and Tkinter.
 
 ## Features 
