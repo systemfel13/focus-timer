@@ -36,12 +36,12 @@ class FocusTimer:
             padx=30, # Makes the button wider
             pady=15, # Space in the button above/under the text
             relief="flat", # Makes the button flat
-            cursor="hand2" # The cursors becomes a and when it's over the button
+            cursor="hand2" # The cursors becomes a hand when it's over the button
         )
         self.button.pack(pady=20) # Place the button in the window, pady=20 is space around the button
 
     def start_timer(self):
-        self.countdown()
+            self.countdown()
 
     def countdown(self):
         if self.time_left > 0:
@@ -53,6 +53,8 @@ class FocusTimer:
             self.window.after(1000, self.countdown)
         else:
             self.break_notification()
+            self.time_left = 1800
+            self.time_label.config(text="30:00")
 
     def break_notification(self):
         notification.notify(
@@ -61,5 +63,5 @@ class FocusTimer:
             timeout=20
         )
 
-timer = FocusTimer()
-timer.window.mainloop()
+timer = FocusTimer() # Creates an instance of the class
+timer.window.mainloop() # Keeps the program running
